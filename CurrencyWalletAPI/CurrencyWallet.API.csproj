@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\CurrencyWallet.API.xml</DocumentationFile>
+  </PropertyGroup>
+
+
+</Project>
