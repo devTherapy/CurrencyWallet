@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CurrencyWallet.Application.Models.ApiCall
+namespace CurrencyWallet.Application.Models.Api
 {
-    public class Data
+    public class Rates
     {
 
     }

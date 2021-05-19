@@ -7,19 +7,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3136D764-ABF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{7341DC7A-11E8-462A-82B9-E1D9476782E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyWallet.API", "CurrencyWalletAPI\CurrencyWallet.API.csproj", "{66E67AD8-1CBB-4BB7-92CF-420EA7D24AD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyWallet.API", "CurrencyWalletAPI\CurrencyWallet.API.csproj", "{66E67AD8-1CBB-4BB7-92CF-420EA7D24AD3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{31822D2C-AE95-4E93-A5EE-DFCB8690169F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyWallet.Application", "Application\CurrencyWallet.Application.csproj", "{B4BE6607-1CCC-48FA-AF1B-D2D449FDB8FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyWallet.Application", "Application\CurrencyWallet.Application.csproj", "{B4BE6607-1CCC-48FA-AF1B-D2D449FDB8FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyWallet.Domain", "CurrencyWallet.Domain\CurrencyWallet.Domain.csproj", "{3CF9218E-E852-432E-B2EE-4538258FF4CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyWallet.Domain", "CurrencyWallet.Domain\CurrencyWallet.Domain.csproj", "{3CF9218E-E852-432E-B2EE-4538258FF4CB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{F920250A-364F-4691-AC97-89D034936CF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyWallet.Infrastructure", "CurrencyWallet.Infrastructure\CurrencyWallet.Infrastructure.csproj", "{CB648154-9C85-42D4-8189-F7756439B7AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyWallet.Infrastructure", "CurrencyWallet.Infrastructure\CurrencyWallet.Infrastructure.csproj", "{CB648154-9C85-42D4-8189-F7756439B7AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyWallet.Persistence", "CurrencyWallet.Persistence\CurrencyWallet.Persistence.csproj", "{445A6122-BFD2-4B44-85D9-8B4C79BD4677}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyWallet.Persistence", "CurrencyWallet.Persistence\CurrencyWallet.Persistence.csproj", "{445A6122-BFD2-4B44-85D9-8B4C79BD4677}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyWallet.Identity", "CurrencyWallet.Identity\CurrencyWallet.Identity.csproj", "{9112528E-3376-4717-8AE5-8D47D98D3550}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{445A6122-BFD2-4B44-85D9-8B4C79BD4677}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{445A6122-BFD2-4B44-85D9-8B4C79BD4677}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{445A6122-BFD2-4B44-85D9-8B4C79BD4677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9112528E-3376-4717-8AE5-8D47D98D3550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9112528E-3376-4717-8AE5-8D47D98D3550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9112528E-3376-4717-8AE5-8D47D98D3550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9112528E-3376-4717-8AE5-8D47D98D3550}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{F920250A-364F-4691-AC97-89D034936CF5} = {3136D764-ABFD-4470-9995-E6C71C3D6D55}
 		{CB648154-9C85-42D4-8189-F7756439B7AE} = {F920250A-364F-4691-AC97-89D034936CF5}
 		{445A6122-BFD2-4B44-85D9-8B4C79BD4677} = {F920250A-364F-4691-AC97-89D034936CF5}
+		{9112528E-3376-4717-8AE5-8D47D98D3550} = {F920250A-364F-4691-AC97-89D034936CF5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {95341E91-B4D2-41F7-B1E8-CF5A1C2EB1B0}
