@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CurrencyWallet.API</name>
+    </assembly>
+    <members>
+        <member name="M:CurrencyWallet.API.Extensions.SwaggerServiceRegistration.AddConfigureSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Method to add swagger configuration
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Spender_API.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Create Host Builder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
