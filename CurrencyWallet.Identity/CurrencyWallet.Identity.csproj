@@ -23,4 +23,8 @@
     <Folder Include="Seeder\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CurrencyWallet.Domain\CurrencyWallet.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

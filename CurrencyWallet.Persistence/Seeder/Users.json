@@ -1,0 +1,100 @@
+[
+  {
+    "Id": "c1eabc48-e93c-47ac-932d-5b004f9cc2bb",
+    "FirstName": "Janine",
+    "LastName": "Golden",
+    "UserName": "janinegolden@renovize.com",
+    "Email":  "janinegolden@renovize.com",
+
+    "Gender": "female",
+    "Wallets": [
+      {
+        "Id": "31bb0800-b057-4497-a7a9-5fe3eb257145",
+        "Currency": "AED",
+        "Balance": "10000.00",
+        "Main": "true",
+        "Transactions": [
+          {
+            "Currency": "AED",
+            "Amount": "5000.00",
+            "WalletId": "31bb0800-b057-4497-a7a9-5fe3eb257145",
+            "TransactionTypeId": "08c07c7a-2ab6-40e1-a9e4-ec2d853a3a64", //credit
+            "TransactionStatusId": "a41862f7-10ad-4a71-9e5d-aaf8127e12e7" //approved
+
+          },
+          {
+            "Currency": "AED",
+            "Amount": "5000.00",
+            "WalletId": "31bb0800-b057-4497-a7a9-5fe3eb257145",
+            "TransactionTypeId": "08c07c7a-2ab6-40e1-a9e4-ec2d853a3a64", //credit
+            "TransactionStatusId": "a41862f7-10ad-4a71-9e5d-aaf8127e12e7" //approved
+          }
+        ]
+      },
+    ]
+  },
+  {
+    "Id": "17ea217b-f400-4170-9d3d-2e1b780587a0",
+    "FirstName": "Wong",
+    "LastName": "Riggs",
+    "UserName": "wongriggs@renovize.com",
+    "Email": "wongriggs@renovize.com",
+    "Gender": "male",
+    "Wallets": [
+      {
+        "Id": "ab90ef3d-364b-4889-800a-8b8f768d6e96",
+        "Currency": "AED",
+        "Balance": "10000.00",
+        "Main": "true",
+        "Transactions": [
+          {
+            "Currency": "AED",
+            "Amount": "5000.00",
+            "WalletId": "ab90ef3d-364b-4889-800a-8b8f768d6e96",
+            "TransactionTypeId": "08c07c7a-2ab6-40e1-a9e4-ec2d853a3a64", //credit
+            "TransactionStatusId": "a41862f7-10ad-4a71-9e5d-aaf8127e12e7" //approved
+
+          },
+          {
+            "Currency": "AED",
+            "Amount": "5000.00",
+            "WalletId": "ab90ef3d-364b-4889-800a-8b8f768d6e96",
+            "TransactionTypeId": "08c07c7a-2ab6-40e1-a9e4-ec2d853a3a64", //credit
+            "TransactionStatusId": "a41862f7-10ad-4a71-9e5d-aaf8127e12e7" //approved
+          }
+        ]
+      },
+      {
+        "Id": "a0d74a03-c53c-405b-b97c-948e13985117",
+        "Currency": "ALL",
+        "Balance": "20000.00",
+        "Main": "false",
+        "Transactions": [
+          {
+            "Currency": "ALL",
+            "Amount": "20000.00",
+            "WalletId": "a0d74a03-c53c-405b-b97c-948e13985117",
+            "TransactionTypeId": "08c07c7a-2ab6-40e1-a9e4-ec2d853a3a64", //credit
+            "TransactionStatusId": "a41862f7-10ad-4a71-9e5d-aaf8127e12e7" //approved
+
+          },
+          {
+            "Currency": "ALL",
+            "Amount": "20000.00",
+            "WalletId": "a0d74a03-c53c-405b-b97c-948e13985117",
+            "TransactionTypeId": "08c07c7a-2ab6-40e1-a9e4-ec2d853a3a64", //credit
+            "TransactionStatusId": "a41862f7-10ad-4a71-9e5d-aaf8127e12e7" //approved
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": "bf04619f-c6f5-47a3-b0a0-e9d2824176e9",
+    "FirstName": "Abe",
+    "LastName": "Foluwasayo",
+    "UserName": "physionode@gmail.com",
+    "Email": "physionode@gmail.com",
+    "Gender": "male"
+  }
+]

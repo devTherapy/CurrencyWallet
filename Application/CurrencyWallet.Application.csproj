@@ -1,12 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Contract\" />
-    <Folder Include="Exceptions\" />
     <Folder Include="Features\Wallet\Command\" />
     <Folder Include="Features\Wallet\Queries\" />
     <Folder Include="Models\Authentication\" />
@@ -17,9 +15,14 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.6" />
     <PackageReference Include="FluentValidation" Version="10.1.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.1.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CurrencyWallet.Domain\CurrencyWallet.Domain.csproj" />
   </ItemGroup>
 
 </Project>

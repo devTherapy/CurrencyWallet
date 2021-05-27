@@ -17,5 +17,11 @@
             <param name="args"></param>
             <returns></returns>
         </member>
+        <member name="M:CurrencyWalletAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
     </members>
 </doc>

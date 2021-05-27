@@ -12,9 +12,11 @@ namespace CurrencyWallet.Identity.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Gender { get; set; }
-        public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
-        public DateTime LastModifiedDate { get; set; } = DateTime.UtcNow;
+        public DateTime CreatedDate { get; set; }
+        public DateTime LastModifiedDate { get; set; }
 
+
+        //navigational properties
         public ICollection<Wallet> Wallets { get; set; }
 
     }

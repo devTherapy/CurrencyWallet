@@ -43,3 +43,19 @@
 05/20/2021 05:06:28 Request finished in 143.4526ms 200 text/html;charset=utf-8
 05/20/2021 05:06:28 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
 05/20/2021 05:06:28 Request finished in 44.8206ms 200 application/json;charset=utf-8
+05/20/2021 18:20:53 Application starting up
+05/20/2021 18:20:56 Application started. Press Ctrl+C to shut down.
+05/20/2021 18:20:56 Hosting environment: "Development"
+05/20/2021 18:20:56 Content root path: "C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI"
+05/20/2021 18:20:56 Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html  
+05/20/2021 18:20:56 Request finished in 373.7587ms 200 text/html;charset=utf-8
+05/20/2021 18:20:57 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
+05/20/2021 18:20:57 Request finished in 63.9359ms 200 application/json;charset=utf-8
+05/20/2021 19:12:17 Application starting up
+05/20/2021 19:12:18 Application started. Press Ctrl+C to shut down.
+05/20/2021 19:12:18 Hosting environment: "Development"
+05/20/2021 19:12:18 Content root path: "C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI"
+05/20/2021 19:12:18 Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html  
+05/20/2021 19:12:18 Request finished in 169.1399ms 200 text/html;charset=utf-8
+05/20/2021 19:12:19 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
+05/20/2021 19:12:19 Request finished in 69.1356ms 200 application/json;charset=utf-8

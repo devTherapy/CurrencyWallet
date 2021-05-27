@@ -1,0 +1,14 @@
+[
+  {
+    "Id": "a41862f7-10ad-4a71-9e5d-aaf8127e12e7",
+    "Name": "approved"
+  },
+  {
+    "Id": "08c07c7a-2ab6-40e1-a9e4-ec2d853a3a64",
+    "Name": "pending"
+  },
+  {
+    "Id": "7542fdcd-21f3-4520-92ce-8880bc62a54c",
+    "Name": "declined"
+  }
+]
