@@ -97,7 +97,7 @@ namespace CurrencyWallet.Persistence.Seeder
             throw new Exception(errMsg);
         }
 
-        private static List<Tmodel> TransformJSONtoPOCO<Tmodel>(string json)
+        private static  List<Tmodel> TransformJSONtoPOCO<Tmodel>(string json)
         {
             var path = Path.GetFullPath(@"../CurrencyWallet.Persistence/Seeder/" + json);
             return JsonConvert.DeserializeObject<List<Tmodel>>(File.ReadAllText(path));

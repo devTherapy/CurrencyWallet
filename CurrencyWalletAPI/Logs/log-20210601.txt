@@ -1,0 +1,958 @@
+06/01/2021 17:47:50 Application starting up
+06/01/2021 17:47:53 User profile is available. Using '"C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+06/01/2021 17:47:55 No type was specified for the decimal property '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 17:47:55 No type was specified for the decimal property '"Balance"' on entity type '"Wallet"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 17:47:55 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/01/2021 17:47:56 Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+06/01/2021 17:47:56 Executed DbCommand ("99"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0"
+06/01/2021 17:47:56 Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 17:47:56 Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionTypes] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 17:47:56 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionStatuses] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 17:47:56 Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 17:47:57 Application started. Press Ctrl+C to shut down.
+06/01/2021 17:47:57 Hosting environment: "Development"
+06/01/2021 17:47:57 Content root path: "C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI"
+06/01/2021 17:47:57 Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html  
+06/01/2021 17:47:57 Request finished in 150.3964ms 200 text/html;charset=utf-8
+06/01/2021 17:47:57 Request starting HTTP/2.0 GET https://localhost:44346/swagger/swagger-ui.css  
+06/01/2021 17:47:57 Request starting HTTP/2.0 GET https://localhost:44346/swagger/swagger-ui-bundle.js  
+06/01/2021 17:47:57 Request starting HTTP/2.0 GET https://localhost:44346/swagger/swagger-ui-standalone-preset.js  
+06/01/2021 17:47:57 Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+06/01/2021 17:47:57 Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+06/01/2021 17:47:57 Request finished in 76.1492ms 200 application/javascript
+06/01/2021 17:47:57 Request finished in 80.8022ms 200 text/css
+06/01/2021 17:47:57 Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+06/01/2021 17:47:57 Request finished in 91.8329ms 200 application/javascript
+06/01/2021 17:47:57 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
+06/01/2021 17:47:57 Request starting HTTP/2.0 GET https://localhost:44346/swagger/favicon-32x32.png  
+06/01/2021 17:47:57 Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+06/01/2021 17:47:57 Request finished in 3.2473ms 200 image/png
+06/01/2021 17:47:57 Request finished in 170.2266ms 200 application/json;charset=utf-8
+06/01/2021 18:26:18 Application starting up
+06/01/2021 18:26:19 User profile is available. Using '"C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+06/01/2021 18:26:20 No type was specified for the decimal property '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 18:26:20 No type was specified for the decimal property '"Balance"' on entity type '"Wallet"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 18:26:21 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/01/2021 18:26:21 Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+06/01/2021 18:26:21 Executed DbCommand ("87"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0"
+06/01/2021 18:26:21 Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:26:22 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionTypes] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:26:22 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionStatuses] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:26:22 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:26:22 Application started. Press Ctrl+C to shut down.
+06/01/2021 18:26:22 Hosting environment: "Development"
+06/01/2021 18:26:22 Content root path: "C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI"
+06/01/2021 18:26:22 Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html  
+06/01/2021 18:26:22 Request finished in 103.1067ms 200 text/html;charset=utf-8
+06/01/2021 18:26:22 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
+06/01/2021 18:26:22 Request finished in 128.3112ms 200 application/json;charset=utf-8
+06/01/2021 18:26:28 Request starting HTTP/1.1 POST https://localhost:44346/api/CreateWallet application/json 66
+06/01/2021 18:26:29 HTTP "POST" "/api/CreateWallet" responded 404 in 273.1688 ms
+06/01/2021 18:26:29 Request finished in 283.0597ms 404 
+06/01/2021 18:26:40 Request starting HTTP/1.1 POST https://localhost:44346/api/CreateWallet application/json 66
+06/01/2021 18:26:40 HTTP "POST" "/api/CreateWallet" responded 404 in 4.5553 ms
+06/01/2021 18:26:40 Request finished in 8.2746ms 404 
+06/01/2021 18:28:03 Request starting HTTP/1.1 POST https://localhost:44346/api/Wallet/CreateWallet application/json 66
+06/01/2021 18:28:03 Executing endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 18:28:03 Route matched with "{action = \"Create\", controller = \"Wallet\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse]] Create(CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand)" on controller "CurrencyWallet.API.Controllers.WalletController" ("CurrencyWallet.API").
+06/01/2021 18:28:03 Executed action "CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)" in 5.9998ms
+06/01/2021 18:28:03 Executed endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 18:28:03 HTTP "POST" "/api/Wallet/CreateWallet" responded 500 in 92.4740 ms
+System.InvalidOperationException: Unable to resolve service for type 'MediatR.IMediator' while attempting to activate 'CurrencyWallet.API.Controllers.WalletController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+06/01/2021 18:28:03 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'MediatR.IMediator' while attempting to activate 'CurrencyWallet.API.Controllers.WalletController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+06/01/2021 18:28:03 Request finished in 255.6602ms 500 text/plain
+06/01/2021 18:34:45 Application starting up
+06/01/2021 18:34:47 User profile is available. Using '"C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+06/01/2021 18:34:48 No type was specified for the decimal property '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 18:34:48 No type was specified for the decimal property '"Balance"' on entity type '"Wallet"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 18:34:48 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/01/2021 18:34:49 Executed DbCommand ("46"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+06/01/2021 18:34:49 Executed DbCommand ("44"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0"
+06/01/2021 18:34:49 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:34:49 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionTypes] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:34:49 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionStatuses] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:34:49 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:34:49 Application started. Press Ctrl+C to shut down.
+06/01/2021 18:34:49 Hosting environment: "Development"
+06/01/2021 18:34:49 Content root path: "C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI"
+06/01/2021 18:34:49 Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html  
+06/01/2021 18:34:49 Request finished in 107.5997ms 200 text/html;charset=utf-8
+06/01/2021 18:34:50 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
+06/01/2021 18:34:50 Request finished in 117.6599ms 200 application/json;charset=utf-8
+06/01/2021 18:35:02 Request starting HTTP/1.1 POST https://localhost:44346/api/Wallet/CreateWallet application/json 66
+06/01/2021 18:35:02 Executing endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 18:35:02 Route matched with "{action = \"Create\", controller = \"Wallet\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse]] Create(CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand)" on controller "CurrencyWallet.API.Controllers.WalletController" ("CurrencyWallet.API").
+06/01/2021 18:35:02 Executed action "CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)" in 5.2719ms
+06/01/2021 18:35:02 Executed endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 18:35:02 HTTP "POST" "/api/Wallet/CreateWallet" responded 500 in 261.6540 ms
+System.InvalidOperationException: Unable to resolve service for type 'MediatR.IMediator' while attempting to activate 'CurrencyWallet.API.Controllers.WalletController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+06/01/2021 18:35:02 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'MediatR.IMediator' while attempting to activate 'CurrencyWallet.API.Controllers.WalletController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+06/01/2021 18:35:02 Request finished in 343.924ms 500 text/plain
+06/01/2021 18:35:09 Request starting HTTP/1.1 POST https://localhost:44346/api/Wallet/CreateWallet application/json 66
+06/01/2021 18:35:09 Executing endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 18:35:09 Route matched with "{action = \"Create\", controller = \"Wallet\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse]] Create(CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand)" on controller "CurrencyWallet.API.Controllers.WalletController" ("CurrencyWallet.API").
+06/01/2021 18:35:09 Executed action "CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)" in 1.4848ms
+06/01/2021 18:35:09 Executed endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 18:35:09 HTTP "POST" "/api/Wallet/CreateWallet" responded 500 in 5.1146 ms
+System.InvalidOperationException: Unable to resolve service for type 'MediatR.IMediator' while attempting to activate 'CurrencyWallet.API.Controllers.WalletController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+06/01/2021 18:35:09 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'MediatR.IMediator' while attempting to activate 'CurrencyWallet.API.Controllers.WalletController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+06/01/2021 18:35:09 Request finished in 17.9674ms 500 text/plain
+06/01/2021 18:35:10 Request starting HTTP/1.1 POST https://localhost:44346/api/Wallet/CreateWallet application/json 66
+06/01/2021 18:35:10 Executing endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 18:35:10 Route matched with "{action = \"Create\", controller = \"Wallet\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse]] Create(CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand)" on controller "CurrencyWallet.API.Controllers.WalletController" ("CurrencyWallet.API").
+06/01/2021 18:35:10 Executed action "CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)" in 0.7744ms
+06/01/2021 18:35:10 Executed endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 18:35:10 HTTP "POST" "/api/Wallet/CreateWallet" responded 500 in 7.8493 ms
+System.InvalidOperationException: Unable to resolve service for type 'MediatR.IMediator' while attempting to activate 'CurrencyWallet.API.Controllers.WalletController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+06/01/2021 18:35:10 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'MediatR.IMediator' while attempting to activate 'CurrencyWallet.API.Controllers.WalletController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+06/01/2021 18:35:10 Request finished in 16.7395ms 500 text/plain
+06/01/2021 18:40:43 Application starting up
+06/01/2021 18:40:45 The application failed to start correctly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MediatR.IRequestHandler`2[CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand,CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse] Lifetime: Transient ImplementationType: CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletHandler': Unable to resolve service for type 'CurrencyWallet.Application.Contract.Persistence.IAsyncRepository`1[CurrencyWallet.Domain.Entities.Wallet]' while attempting to activate 'CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletHandler'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MediatR.IRequestHandler`2[CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand,CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse] Lifetime: Transient ImplementationType: CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletHandler': Unable to resolve service for type 'CurrencyWallet.Application.Contract.Persistence.IAsyncRepository`1[CurrencyWallet.Domain.Entities.Wallet]' while attempting to activate 'CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletHandler'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'CurrencyWallet.Application.Contract.Persistence.IAsyncRepository`1[CurrencyWallet.Domain.Entities.Wallet]' while attempting to activate 'CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletHandler'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Spender_API.Program.Main(String[] args) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Program.cs:line 33
+06/01/2021 18:43:22 Application starting up
+06/01/2021 18:43:23 User profile is available. Using '"C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+06/01/2021 18:43:24 No type was specified for the decimal property '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 18:43:24 No type was specified for the decimal property '"Balance"' on entity type '"Wallet"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 18:43:24 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/01/2021 18:43:24 Executed DbCommand ("56"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+06/01/2021 18:43:25 Executed DbCommand ("59"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0"
+06/01/2021 18:43:25 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:43:25 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionTypes] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:43:25 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionStatuses] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:43:25 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:43:25 Application started. Press Ctrl+C to shut down.
+06/01/2021 18:43:25 Hosting environment: "Development"
+06/01/2021 18:43:25 Content root path: "C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI"
+06/01/2021 18:43:25 Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html  
+06/01/2021 18:43:25 Request finished in 122.2335ms 200 text/html;charset=utf-8
+06/01/2021 18:43:26 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
+06/01/2021 18:43:26 Request finished in 125.3289ms 200 application/json;charset=utf-8
+06/01/2021 18:43:52 Application starting up
+06/01/2021 18:43:53 The application failed to start correctly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MediatR.IRequestHandler`2[CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand,CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse] Lifetime: Transient ImplementationType: CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletHandler': Unable to resolve service for type 'CurrencyWallet.Application.Contract.Persistence.IAsyncRepository`1[CurrencyWallet.Domain.Entities.Wallet]' while attempting to activate 'CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletHandler'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MediatR.IRequestHandler`2[CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand,CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse] Lifetime: Transient ImplementationType: CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletHandler': Unable to resolve service for type 'CurrencyWallet.Application.Contract.Persistence.IAsyncRepository`1[CurrencyWallet.Domain.Entities.Wallet]' while attempting to activate 'CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletHandler'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'CurrencyWallet.Application.Contract.Persistence.IAsyncRepository`1[CurrencyWallet.Domain.Entities.Wallet]' while attempting to activate 'CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletHandler'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Spender_API.Program.Main(String[] args) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Program.cs:line 33
+06/01/2021 18:59:17 Application starting up
+06/01/2021 18:59:18 User profile is available. Using '"C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+06/01/2021 18:59:20 No type was specified for the decimal property '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 18:59:20 No type was specified for the decimal property '"Balance"' on entity type '"Wallet"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 18:59:20 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/01/2021 18:59:21 Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+06/01/2021 18:59:21 Executed DbCommand ("57"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0"
+06/01/2021 18:59:21 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:59:21 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionTypes] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:59:21 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionStatuses] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:59:21 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 18:59:21 Application started. Press Ctrl+C to shut down.
+06/01/2021 18:59:21 Hosting environment: "Development"
+06/01/2021 18:59:21 Content root path: "C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI"
+06/01/2021 18:59:21 Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html  
+06/01/2021 18:59:21 Request finished in 111.5297ms 200 text/html;charset=utf-8
+06/01/2021 18:59:22 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
+06/01/2021 18:59:22 Request finished in 97.8961ms 200 application/json;charset=utf-8
+06/01/2021 18:59:39 Request starting HTTP/1.1 POST https://localhost:44346/api/Wallet/CreateWallet application/json 66
+06/01/2021 18:59:39 Executing endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 18:59:39 Route matched with "{action = \"Create\", controller = \"Wallet\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse]] Create(CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand)" on controller "CurrencyWallet.API.Controllers.WalletController" ("CurrencyWallet.API").
+06/01/2021 19:00:00 Application starting up
+06/01/2021 19:00:02 User profile is available. Using '"C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+06/01/2021 19:00:03 No type was specified for the decimal property '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 19:00:03 No type was specified for the decimal property '"Balance"' on entity type '"Wallet"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 19:00:03 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/01/2021 19:00:04 Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+06/01/2021 19:00:04 Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0"
+06/01/2021 19:00:04 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:00:04 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionTypes] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:00:04 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionStatuses] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:00:04 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:00:05 Application started. Press Ctrl+C to shut down.
+06/01/2021 19:00:05 Hosting environment: "Development"
+06/01/2021 19:00:05 Content root path: "C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI"
+06/01/2021 19:00:05 Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html  
+06/01/2021 19:00:05 Request finished in 126.1178ms 200 text/html;charset=utf-8
+06/01/2021 19:00:05 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
+06/01/2021 19:00:05 Request finished in 124.3654ms 200 application/json;charset=utf-8
+06/01/2021 19:00:19 Request starting HTTP/1.1 POST https://localhost:44346/api/Wallet/CreateWallet application/json 66
+06/01/2021 19:00:19 Executing endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 19:00:19 Route matched with "{action = \"Create\", controller = \"Wallet\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse]] Create(CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand)" on controller "CurrencyWallet.API.Controllers.WalletController" ("CurrencyWallet.API").
+06/01/2021 19:00:19 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/01/2021 19:00:20 Failed executing DbCommand ("92"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Boolean), @p6='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Wallets] ([Id], [Balance], [CreatedDate], [Currency], [LastModifiedDate], [Main], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);"
+06/01/2021 19:00:20 An exception occurred in the database while saving changes for context type '"CurrencyWallet.Persistence.CurrencyWalletDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_Wallets_AspNetUsers_UserId\". The conflict occurred in database \"CurrencyWalletDb\", table \"dbo.AspNetUsers\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:702ef77c-ea8d-4712-95fb-eb417abada59
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Wallets_AspNetUsers_UserId". The conflict occurred in database "CurrencyWalletDb", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:702ef77c-ea8d-4712-95fb-eb417abada59
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+06/01/2021 19:00:20 Executed action "CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)" in 1041.5202ms
+06/01/2021 19:00:20 Executed endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 19:00:20 HTTP "POST" "/api/Wallet/CreateWallet" responded 500 in 1215.5173 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Wallets_AspNetUsers_UserId". The conflict occurred in database "CurrencyWalletDb", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:702ef77c-ea8d-4712-95fb-eb417abada59
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CurrencyWallet.Persistence.Repositories.BaseRepository`1.AddAsync(T Entity) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWallet.Persistence\Repositories\BaseRepository.cs:line 22
+   at CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletHandler.Handle(CreateWalletCommand request, CancellationToken cancellationToken) in C:\Users\hp\source\repos\CurrencyWallet\Application\Features\Wallets\Command\CreateWallet\CreateWalletHandler.cs:line 40
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at CurrencyWallet.API.Controllers.WalletController.Create(CreateWalletCommand createWalletCommand) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Controllers\WalletController.cs:line 30
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+06/01/2021 19:00:20 An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Wallets_AspNetUsers_UserId". The conflict occurred in database "CurrencyWalletDb", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:702ef77c-ea8d-4712-95fb-eb417abada59
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CurrencyWallet.Persistence.Repositories.BaseRepository`1.AddAsync(T Entity) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWallet.Persistence\Repositories\BaseRepository.cs:line 22
+   at CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletHandler.Handle(CreateWalletCommand request, CancellationToken cancellationToken) in C:\Users\hp\source\repos\CurrencyWallet\Application\Features\Wallets\Command\CreateWallet\CreateWalletHandler.cs:line 40
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at CurrencyWallet.API.Controllers.WalletController.Create(CreateWalletCommand createWalletCommand) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Controllers\WalletController.cs:line 30
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+06/01/2021 19:00:20 Request finished in 1379.7965ms 500 text/plain
+06/01/2021 19:04:04 Application starting up
+06/01/2021 19:04:05 User profile is available. Using '"C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+06/01/2021 19:04:07 No type was specified for the decimal property '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 19:04:07 No type was specified for the decimal property '"Balance"' on entity type '"Wallet"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 19:04:07 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/01/2021 19:04:07 Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+06/01/2021 19:04:07 Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0"
+06/01/2021 19:04:08 Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:04:08 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionTypes] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:04:08 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionStatuses] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:04:08 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:04:08 Application started. Press Ctrl+C to shut down.
+06/01/2021 19:04:08 Hosting environment: "Development"
+06/01/2021 19:04:08 Content root path: "C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI"
+06/01/2021 19:04:08 Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html  
+06/01/2021 19:04:08 Request finished in 99.5066ms 200 text/html;charset=utf-8
+06/01/2021 19:04:08 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
+06/01/2021 19:04:08 Request finished in 116.1343ms 200 application/json;charset=utf-8
+06/01/2021 19:04:18 Request starting HTTP/1.1 POST https://localhost:44346/api/Wallet/CreateWallet application/json 81
+06/01/2021 19:04:18 Executing endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 19:04:18 Route matched with "{action = \"Create\", controller = \"Wallet\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse]] Create(CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand)" on controller "CurrencyWallet.API.Controllers.WalletController" ("CurrencyWallet.API").
+06/01/2021 19:04:18 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/01/2021 19:04:18 Executed DbCommand ("45"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Boolean), @p6='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Wallets] ([Id], [Balance], [CreatedDate], [Currency], [LastModifiedDate], [Main], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);"
+06/01/2021 19:04:18 Executing ObjectResult, writing value of type '"CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse"'.
+06/01/2021 19:04:18 Executed action "CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)" in 585.5234ms
+06/01/2021 19:04:18 Executed endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 19:04:18 HTTP "POST" "/api/Wallet/CreateWallet" responded 200 in 703.1993 ms
+06/01/2021 19:04:18 Request finished in 713.0715ms 200 application/json; charset=utf-8
+06/01/2021 19:17:26 Request starting HTTP/1.1 POST https://localhost:44346/api/Wallet/CreateWallet application/json 81
+06/01/2021 19:17:26 Executing endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 19:17:26 Route matched with "{action = \"Create\", controller = \"Wallet\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse]] Create(CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand)" on controller "CurrencyWallet.API.Controllers.WalletController" ("CurrencyWallet.API").
+06/01/2021 19:17:26 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/01/2021 19:17:26 Executed DbCommand ("8"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Boolean), @p6='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Wallets] ([Id], [Balance], [CreatedDate], [Currency], [LastModifiedDate], [Main], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);"
+06/01/2021 19:17:26 Executing ObjectResult, writing value of type '"CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse"'.
+06/01/2021 19:17:26 Executed action "CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)" in 97.2129ms
+06/01/2021 19:17:26 Executed endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 19:17:26 HTTP "POST" "/api/Wallet/CreateWallet" responded 200 in 118.8030 ms
+06/01/2021 19:17:26 Request finished in 128.2241ms 200 application/json; charset=utf-8
+06/01/2021 19:21:10 Application starting up
+06/01/2021 19:21:11 User profile is available. Using '"C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+06/01/2021 19:21:13 No type was specified for the decimal property '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 19:21:13 No type was specified for the decimal property '"Balance"' on entity type '"Wallet"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 19:21:13 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/01/2021 19:21:13 Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+06/01/2021 19:21:13 Executed DbCommand ("49"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0"
+06/01/2021 19:21:13 Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:21:14 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionTypes] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:21:14 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionStatuses] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:21:14 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:21:14 Application started. Press Ctrl+C to shut down.
+06/01/2021 19:21:14 Hosting environment: "Development"
+06/01/2021 19:21:14 Content root path: "C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI"
+06/01/2021 19:21:14 Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html  
+06/01/2021 19:21:14 Request finished in 110.3416ms 200 text/html;charset=utf-8
+06/01/2021 19:21:14 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
+06/01/2021 19:21:14 Request finished in 149.7846ms 200 application/json;charset=utf-8
+06/01/2021 19:21:22 Request starting HTTP/1.1 POST https://localhost:44346/api/Wallet/CreateWallet application/json 81
+06/01/2021 19:21:22 Executing endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 19:21:22 Route matched with "{action = \"Create\", controller = \"Wallet\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse]] Create(CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand)" on controller "CurrencyWallet.API.Controllers.WalletController" ("CurrencyWallet.API").
+06/01/2021 19:21:23 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/01/2021 19:21:23 Executed DbCommand ("34"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Boolean), @p6='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Wallets] ([Id], [Balance], [CreatedDate], [Currency], [LastModifiedDate], [Main], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);"
+06/01/2021 19:21:23 Executing ObjectResult, writing value of type '"CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse"'.
+06/01/2021 19:21:23 Executed action "CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)" in 630.7216ms
+06/01/2021 19:21:23 Executed endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 19:21:23 HTTP "POST" "/api/Wallet/CreateWallet" responded 200 in 830.3432 ms
+06/01/2021 19:21:23 Request finished in 845.0177ms 200 application/json; charset=utf-8
+06/01/2021 19:23:53 Application starting up
+06/01/2021 19:23:55 User profile is available. Using '"C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+06/01/2021 19:23:56 No type was specified for the decimal property '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 19:23:56 No type was specified for the decimal property '"Balance"' on entity type '"Wallet"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+06/01/2021 19:23:56 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/01/2021 19:23:57 Executed DbCommand ("46"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+06/01/2021 19:23:57 Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0"
+06/01/2021 19:23:57 Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:23:57 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionTypes] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:23:57 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionStatuses] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:23:57 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+06/01/2021 19:23:57 Application started. Press Ctrl+C to shut down.
+06/01/2021 19:23:57 Hosting environment: "Development"
+06/01/2021 19:23:57 Content root path: "C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI"
+06/01/2021 19:23:57 Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html  
+06/01/2021 19:23:57 Request starting HTTP/1.1 POST https://localhost:44346/api/Wallet/CreateWallet application/json 81
+06/01/2021 19:23:58 Request finished in 182.3818ms 200 text/html;charset=utf-8
+06/01/2021 19:23:58 Executing endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 19:23:58 Route matched with "{action = \"Create\", controller = \"Wallet\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse]] Create(CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand)" on controller "CurrencyWallet.API.Controllers.WalletController" ("CurrencyWallet.API").
+06/01/2021 19:23:58 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
+06/01/2021 19:23:58 Request finished in 151.0877ms 200 application/json;charset=utf-8
+06/01/2021 19:23:58 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+06/01/2021 19:23:58 Executed DbCommand ("46"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Boolean), @p6='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Wallets] ([Id], [Balance], [CreatedDate], [Currency], [LastModifiedDate], [Main], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);"
+06/01/2021 19:23:58 Executing ObjectResult, writing value of type '"CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletResponse"'.
+06/01/2021 19:23:58 Executed action "CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)" in 841.8607ms
+06/01/2021 19:23:58 Executed endpoint '"CurrencyWallet.API.Controllers.WalletController.Create (CurrencyWallet.API)"'
+06/01/2021 19:23:58 HTTP "POST" "/api/Wallet/CreateWallet" responded 200 in 1028.1313 ms
+06/01/2021 19:23:58 Request finished in 1102.5973ms 200 application/json; charset=utf-8

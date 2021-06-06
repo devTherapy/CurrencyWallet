@@ -14,7 +14,7 @@ namespace CurrencyWallet.Persistence
         public DbSet<Wallet> Wallets { get; set; }
         public DbSet<Transaction> Tranasactions { get; set; }
         public DbSet<TransactionStatus> TransactionStatuses { get; set; }
-        public DbSet<TransactionCategory``> TransactionTypes { get; set; }
+        public DbSet<TransactionCategory> TransactionTypes { get; set; }
         public DbSet<ApplicationUser> ApplicationUsers{ get; set; }
         public CurrencyWalletDbContext(DbContextOptions<CurrencyWalletDbContext>options) : base(options)
         {

@@ -22,10 +22,8 @@
 	</ItemGroup>
 	
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-	
-  <ItemGroup>
+    <ProjectReference Include="..\CurrecyWallet.Identity\CurrencyWallet.Identity.csproj" />
+    <ProjectReference Include="..\CurrencyWallet.Infrastructure\CurrencyWallet.Infrastructure.csproj" />
     <ProjectReference Include="..\CurrencyWallet.Persistence\CurrencyWallet.Persistence.csproj" />
   </ItemGroup>
 

@@ -1,0 +1,377 @@
+05/31/2021 01:34:43 Application starting up
+05/31/2021 01:34:44 The application failed to start correctly
+System.ArgumentNullException: Value cannot be null. (Parameter 'configure')
+   at Microsoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions.AddAuthorizationCore(IServiceCollection services, Action`1 configure)
+   at Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(IServiceCollection services, Action`1 configure)
+   at Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions.AddAuthorizationServices(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions.AddAuthorization(IMvcCoreBuilder builder)
+   at Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllersCore(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllers(IServiceCollection services)
+   at CurrencyWalletAPI.Startup.ConfigureServices(IServiceCollection services) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Startup.cs:line 40
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass9_0.<Invoke>g__Startup|0(IServiceCollection serviceCollection)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.Invoke(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass8_0.<Build>b__0(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass12_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Spender_API.Program.Main(String[] args) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Program.cs:line 33
+05/31/2021 01:40:48 Application starting up
+05/31/2021 01:40:49 The application failed to start correctly
+System.ArgumentNullException: Value cannot be null. (Parameter 'configure')
+   at Microsoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions.AddAuthorizationCore(IServiceCollection services, Action`1 configure)
+   at Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(IServiceCollection services, Action`1 configure)
+   at Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions.AddAuthorizationServices(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions.AddAuthorization(IMvcCoreBuilder builder)
+   at Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllersCore(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllers(IServiceCollection services)
+   at CurrencyWalletAPI.Startup.ConfigureServices(IServiceCollection services) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Startup.cs:line 40
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass9_0.<Invoke>g__Startup|0(IServiceCollection serviceCollection)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.Invoke(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass8_0.<Build>b__0(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass12_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Spender_API.Program.Main(String[] args) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Program.cs:line 33
+05/31/2021 02:10:29 Application starting up
+05/31/2021 02:10:30 The application failed to start correctly
+System.ArgumentNullException: Value cannot be null. (Parameter 'configure')
+   at Microsoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions.AddAuthorizationCore(IServiceCollection services, Action`1 configure)
+   at Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(IServiceCollection services, Action`1 configure)
+   at Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions.AddAuthorizationServices(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions.AddAuthorization(IMvcCoreBuilder builder)
+   at Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllersCore(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllers(IServiceCollection services)
+   at CurrencyWalletAPI.Startup.ConfigureServices(IServiceCollection services) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Startup.cs:line 40
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass9_0.<Invoke>g__Startup|0(IServiceCollection serviceCollection)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.Invoke(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass8_0.<Build>b__0(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass12_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Spender_API.Program.Main(String[] args) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Program.cs:line 33
+05/31/2021 02:21:39 Application starting up
+05/31/2021 02:22:10 The application failed to start correctly
+System.ArgumentNullException: Value cannot be null. (Parameter 'configure')
+   at Microsoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions.AddAuthorizationCore(IServiceCollection services, Action`1 configure)
+   at Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(IServiceCollection services, Action`1 configure)
+   at Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions.AddAuthorizationServices(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions.AddAuthorization(IMvcCoreBuilder builder)
+   at Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllersCore(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllers(IServiceCollection services)
+   at CurrencyWalletAPI.Startup.ConfigureServices(IServiceCollection services) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Startup.cs:line 40
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass9_0.<Invoke>g__Startup|0(IServiceCollection serviceCollection)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.Invoke(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass8_0.<Build>b__0(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass12_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Spender_API.Program.Main(String[] args) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Program.cs:line 33
+05/31/2021 02:23:02 Application starting up
+05/31/2021 02:23:04 The application failed to start correctly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: Swashbuckle.AspNetCore.Swagger.ISwaggerProvider Lifetime: Transient ImplementationType: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator': Unable to resolve service for type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider' while attempting to activate 'Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator'.) (Error while validating the service descriptor 'ServiceType: Microsoft.Extensions.ApiDescriptions.IDocumentProvider Lifetime: Singleton ImplementationType: Microsoft.Extensions.ApiDescriptions.DocumentProvider': Unable to resolve service for type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider' while attempting to activate 'Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Swashbuckle.AspNetCore.Swagger.ISwaggerProvider Lifetime: Transient ImplementationType: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator': Unable to resolve service for type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider' while attempting to activate 'Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider' while attempting to activate 'Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Spender_API.Program.Main(String[] args) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Program.cs:line 33
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: Microsoft.Extensions.ApiDescriptions.IDocumentProvider Lifetime: Singleton ImplementationType: Microsoft.Extensions.ApiDescriptions.DocumentProvider': Unable to resolve service for type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider' while attempting to activate 'Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiDescriptionGroupCollectionProvider' while attempting to activate 'Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.<>c__DisplayClass7_0.<GetCallSite>b__0(Type type)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)<---
+
+05/31/2021 02:33:45 Application starting up
+05/31/2021 02:33:46 The application failed to start correctly
+System.ArgumentNullException: Value cannot be null. (Parameter 'configure')
+   at Microsoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions.AddAuthorizationCore(IServiceCollection services, Action`1 configure)
+   at Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(IServiceCollection services, Action`1 configure)
+   at Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions.AddAuthorizationServices(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions.AddAuthorization(IMvcCoreBuilder builder)
+   at Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllersCore(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllers(IServiceCollection services)
+   at CurrencyWalletAPI.Startup.ConfigureServices(IServiceCollection services) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Startup.cs:line 40
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass9_0.<Invoke>g__Startup|0(IServiceCollection serviceCollection)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.Invoke(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass8_0.<Build>b__0(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass12_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Spender_API.Program.Main(String[] args) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Program.cs:line 33
+05/31/2021 02:48:30 Application starting up
+05/31/2021 02:48:48 The application failed to start correctly
+System.ArgumentNullException: Value cannot be null. (Parameter 'configure')
+   at Microsoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions.AddAuthorizationCore(IServiceCollection services, Action`1 configure)
+   at Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(IServiceCollection services, Action`1 configure)
+   at Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions.AddAuthorizationServices(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions.AddAuthorization(IMvcCoreBuilder builder)
+   at Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllersCore(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllers(IServiceCollection services)
+   at CurrencyWalletAPI.Startup.ConfigureServices(IServiceCollection services) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Startup.cs:line 40
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass9_0.<Invoke>g__Startup|0(IServiceCollection serviceCollection)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.Invoke(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass8_0.<Build>b__0(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass12_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Spender_API.Program.Main(String[] args) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Program.cs:line 33
+05/31/2021 02:58:00 Application starting up
+05/31/2021 02:58:01 The application failed to start correctly
+System.ArgumentNullException: Value cannot be null. (Parameter 'configure')
+   at Microsoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions.AddAuthorizationCore(IServiceCollection services, Action`1 configure)
+   at Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(IServiceCollection services, Action`1 configure)
+   at Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions.AddAuthorizationServices(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcCoreMvcCoreBuilderExtensions.AddAuthorization(IMvcCoreBuilder builder)
+   at Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllersCore(IServiceCollection services)
+   at Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllers(IServiceCollection services)
+   at CurrencyWalletAPI.Startup.ConfigureServices(IServiceCollection services) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Startup.cs:line 40
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass9_0.<Invoke>g__Startup|0(IServiceCollection serviceCollection)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.Invoke(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass8_0.<Build>b__0(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass12_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Spender_API.Program.Main(String[] args) in C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI\Program.cs:line 33
+05/31/2021 03:05:06 Application starting up
+05/31/2021 03:05:06 User profile is available. Using '"C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/31/2021 03:05:08 No type was specified for the decimal property '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+05/31/2021 03:05:08 No type was specified for the decimal property '"Balance"' on entity type '"Wallet"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+05/31/2021 03:05:08 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+05/31/2021 03:05:09 Executed DbCommand ("37"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+05/31/2021 03:05:09 Executed DbCommand ("97"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0"
+05/31/2021 03:05:09 Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+05/31/2021 03:05:09 Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionTypes] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+05/31/2021 03:05:09 Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionStatuses] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+05/31/2021 03:05:09 Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+05/31/2021 03:05:10 Application started. Press Ctrl+C to shut down.
+05/31/2021 03:05:10 Hosting environment: "Development"
+05/31/2021 03:05:10 Content root path: "C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI"
+05/31/2021 03:05:10 Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html  
+05/31/2021 03:05:10 Request finished in 112.7743ms 200 text/html;charset=utf-8
+05/31/2021 03:05:10 Request starting HTTP/2.0 GET https://localhost:44346/swagger/swagger-ui-bundle.js  
+05/31/2021 03:05:10 Request starting HTTP/2.0 GET https://localhost:44346/swagger/swagger-ui.css  
+05/31/2021 03:05:10 Request starting HTTP/2.0 GET https://localhost:44346/swagger/swagger-ui-standalone-preset.js  
+05/31/2021 03:05:10 Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+05/31/2021 03:05:10 Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+05/31/2021 03:05:10 Request finished in 37.4378ms 200 text/css
+05/31/2021 03:05:10 Request finished in 35.8593ms 200 application/javascript
+05/31/2021 03:05:10 Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+05/31/2021 03:05:10 Request finished in 58.0796ms 200 application/javascript
+05/31/2021 03:05:10 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
+05/31/2021 03:05:11 Request finished in 207.6204ms 200 application/json;charset=utf-8
+05/31/2021 12:04:03 Application starting up
+05/31/2021 12:04:04 User profile is available. Using '"C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/31/2021 12:04:06 No type was specified for the decimal property '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+05/31/2021 12:04:06 No type was specified for the decimal property '"Balance"' on entity type '"Wallet"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+05/31/2021 12:04:06 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+05/31/2021 12:04:07 Executed DbCommand ("46"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+05/31/2021 12:04:07 Executed DbCommand ("52"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0"
+05/31/2021 12:04:07 Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+05/31/2021 12:04:07 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionTypes] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+05/31/2021 12:04:07 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionStatuses] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+05/31/2021 12:04:07 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+05/31/2021 12:04:07 Application started. Press Ctrl+C to shut down.
+05/31/2021 12:04:07 Hosting environment: "Development"
+05/31/2021 12:04:07 Content root path: "C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI"
+05/31/2021 12:04:07 Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html  
+05/31/2021 12:04:08 Request finished in 151.9255ms 200 text/html;charset=utf-8
+05/31/2021 12:04:08 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
+05/31/2021 12:04:08 Request finished in 180.8076ms 200 application/json;charset=utf-8
+05/31/2021 13:38:22 Application starting up
+05/31/2021 13:38:23 User profile is available. Using '"C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/31/2021 13:38:24 No type was specified for the decimal property '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+05/31/2021 13:38:24 No type was specified for the decimal property '"Balance"' on entity type '"Wallet"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+05/31/2021 13:38:24 Entity Framework Core "5.0.6" initialized '"CurrencyWalletDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+05/31/2021 13:38:25 Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+05/31/2021 13:38:25 Executed DbCommand ("54"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0"
+05/31/2021 13:38:25 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+05/31/2021 13:38:25 Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionTypes] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+05/31/2021 13:38:25 Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [TransactionStatuses] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+05/31/2021 13:38:25 Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+05/31/2021 13:38:26 Application started. Press Ctrl+C to shut down.
+05/31/2021 13:38:26 Hosting environment: "Development"
+05/31/2021 13:38:26 Content root path: "C:\Users\hp\source\repos\CurrencyWallet\CurrencyWalletAPI"
+05/31/2021 13:38:26 Request starting HTTP/2.0 GET https://localhost:44346/swagger/index.html  
+05/31/2021 13:38:26 Request finished in 136.8523ms 200 text/html;charset=utf-8
+05/31/2021 13:38:26 Request starting HTTP/2.0 GET https://localhost:44346/swagger/v1/swagger.json  
+05/31/2021 13:38:26 Request finished in 177.6083ms 200 application/json;charset=utf-8

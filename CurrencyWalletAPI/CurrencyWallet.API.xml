@@ -4,11 +4,67 @@
         <name>CurrencyWallet.API</name>
     </assembly>
     <members>
+        <member name="T:CurrencyWallet.API.Controllers.AuthController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CurrencyWallet.API.Controllers.AuthController.#ctor(CurrencyWallet.Application.Contract.Identity.IAuthenticationService)">
+            <summary>
+            
+            </summary>
+            <param name="authService"></param>
+        </member>
+        <member name="M:CurrencyWallet.API.Controllers.AuthController.RegisterAsync(CurrencyWallet.Application.Models.Authentication.RegistrationRequest)">
+            <summary>
+            Reguster a new user to the database
+            </summary>
+            <param name="registrationRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CurrencyWallet.API.Controllers.AuthController.AuthenticateAsync(CurrencyWallet.Application.Models.Authentication.AuthenticationRequest)">
+            <summary>
+            Authenticates user to use to application
+            </summary>
+            <param name="authenticationRequest"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:CurrencyWallet.API.Controllers.WalletController.Create(CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand)">
+            <summary>
+            
+            </summary>
+            <param name="createWalletCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CurrencyWallet.API.Extensions.MiddlewareRegistration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CurrencyWallet.API.Extensions.MiddlewareRegistration.UseCustomExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
         <member name="M:CurrencyWallet.API.Extensions.SwaggerServiceRegistration.AddConfigureSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
             Method to add swagger configuration
             </summary>
             <param name="services"></param>
+        </member>
+        <member name="T:CurrencyWallet.API.Middleware.ExceptionHandlerMiddleWare">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CurrencyWallet.API.Middleware.ExceptionHandlerMiddleWare.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger{CurrencyWallet.API.Middleware.ExceptionHandlerMiddleWare})">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
         </member>
         <member name="M:Spender_API.Program.CreateHostBuilder(System.String[])">
             <summary>

@@ -1,6 +1,10 @@
+using Application;
 using CurrencyWallet.API.Extensions;
+using CurrencyWallet.API.Middleware;
 using CurrencyWallet.Application;
+using CurrencyWallet.Identity;
 using CurrencyWallet.Identity.Models;
+using CurrencyWallet.Infrastructure;
 using CurrencyWallet.Persistence;
 using CurrencyWallet.Persistence.Seeder;
 using Microsoft.AspNetCore.Builder;
@@ -40,6 +44,9 @@ namespace CurrencyWalletAPI
             services.AddConfigureSwagger();
             services.AddPersistenceServices(Configuration);
             services.AddIdentityConfiguring();
+            services.AddAuthenticationConfiguring(Configuration);
+            services.AddApplicationServices();
+            services.AddInfrastructureServices();
 
         }
 
@@ -57,7 +64,8 @@ namespace CurrencyWalletAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseCustomExceptionHandler();
+            app.UseAuthentication();
             app.UseAuthorization();
 
             Preceeder.SeedDB(ctx, roleManager, userManager).Wait();

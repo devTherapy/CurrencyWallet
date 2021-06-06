@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CurrencyWallet.Application.Contract.Persistence
 {
-    interface IWalletRepository : IAsyncRepository<Wallet>
+    public interface IWalletRepository : IAsyncRepository<Wallet>
     {
     }
 }
