@@ -30,11 +30,39 @@
             <returns></returns>
             
         </member>
+        <member name="M:CurrencyWallet.API.Controllers.AuthController.PromoteUser(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CurrencyWallet.API.Controllers.AuthController.DemoteUser(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CurrencyWallet.API.Controllers.TransactionController.ApproveTransaction(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="transactionId"></param>
+            <returns></returns>
+        </member>
         <member name="M:CurrencyWallet.API.Controllers.WalletController.Create(CurrencyWallet.Application.Features.Wallets.Command.CreateWallet.CreateWalletCommand)">
             <summary>
             
             </summary>
             <param name="createWalletCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CurrencyWallet.API.Controllers.WalletController.FundWallet(CurrencyWallet.Application.Features.Wallets.Command.FundWallet.FundWalletCommand)">
+            <summary>
+            
+            </summary>
+            <param name="fundWalletCommand"></param>
             <returns></returns>
         </member>
         <member name="T:CurrencyWallet.API.Extensions.MiddlewareRegistration">

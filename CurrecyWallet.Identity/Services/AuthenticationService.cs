@@ -2,6 +2,7 @@
 using CurrencyWallet.Application.Contract.Infrastructure;
 using CurrencyWallet.Application.Contract.Persistence;
 using CurrencyWallet.Application.Models.Authentication;
+using CurrencyWallet.Application.Utils.Enums;
 using CurrencyWallet.Domain.Entities;
 using CurrencyWallet.Identity.Models;
 using Microsoft.AspNetCore.Identity;
@@ -37,9 +38,9 @@ namespace CurrencyWallet.Application.Identity
         public async Task<AuthenticationResponse> AuthenticateAsync(AuthenticationRequest request)
         {
             var user = await _userManager.FindByEmailAsync(request.Email);
-            if (user != null &&  await _userManager.CheckPasswordAsync(user, request.Password))
+            if (user != null && await _userManager.CheckPasswordAsync(user, request.Password))
             {
-               var result = await _signInManager.PasswordSignInAsync(user.UserName, request.Password, false, lockoutOnFailure: false);
+                var result = await _signInManager.PasswordSignInAsync(user.UserName, request.Password, false, lockoutOnFailure: false);
             }
             else
             {
@@ -49,6 +50,7 @@ namespace CurrencyWallet.Application.Identity
 
             AuthenticationResponse response = new AuthenticationResponse
             {
+                Success = true,
                 UserId = user.Id,
                 Email = user.Email,
                 Username = user.UserName,
@@ -121,14 +123,15 @@ namespace CurrencyWallet.Application.Identity
             {
                 Currency = request.MainCurrency,
                 Main = true,
-                Balance = (decimal) 0.00,
+                Balance = (decimal)0.00,
                 UserId = user.Id,
             };
             var result = await _userManager.CreateAsync(user, request.Password);
             if (result.Succeeded)
             {
+                await _userManager.AddToRoleAsync(user, Roles.Noob.ToString());
                 await _walletRepo.AddAsync(userWallet);
-                return new RegistrationResponse() { UserId = user.Id };
+                return new RegistrationResponse() { Success = true, UserId = user.Id, Message = "Registration Successful, Please go to your registration in your emal" };
             }
             else
             {
@@ -139,12 +142,29 @@ namespace CurrencyWallet.Application.Identity
                 }
                 throw new Exception($"{errorList[0]}");
 
-           }
-
+            }
             //handle the password validation error.
 
         }
 
+        public async Task<PromoteUserResponse> PromoteUser(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null) return new PromoteUserResponse() { Success = false, Message = "User with the given Id does not exist" };
+            if (await _userManager.IsInRoleAsync(user, Roles.Elite.ToString())) return new PromoteUserResponse() { Success = false, Message = "user is already an Elite Member" };
+            await _userManager.RemoveFromRoleAsync(user, Roles.Noob.ToString());
+            await _userManager.AddToRoleAsync(user, Roles.Elite.ToString());
+            return new PromoteUserResponse() { Success = true, Message = "User successfully promoted to Elite role" };
+        }
 
+        public async Task<PromoteUserResponse> DemoteUser(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null) return new PromoteUserResponse() { Success = false, Message = "User with the given Id does not existr" };
+            if (await _userManager.IsInRoleAsync(user, Roles.Noob.ToString())) return new PromoteUserResponse() { Success = false, Message = "user cannot be deleted any further than existing role" };
+            await _userManager.RemoveFromRoleAsync(user, Roles.Elite.ToString());
+            await _userManager.AddToRoleAsync(user, Roles.Noob.ToString());
+            return new PromoteUserResponse() { Success = true, Message = "User successfully demoted to noob role" };
+        }
     }
 }

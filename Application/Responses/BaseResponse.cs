@@ -8,11 +8,11 @@ namespace CurrencyWallet.Application.Responses
     {
         public BaseResponse()
         {
-            Success = true;
+            Success = false;
         }
         public BaseResponse(string message = null)
         {
-            Success = true;
+            Success = false;
             Message = message;
         }
 

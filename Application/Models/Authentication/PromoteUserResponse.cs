@@ -5,8 +5,7 @@ using System.Text;
 
 namespace CurrencyWallet.Application.Models.Authentication
 {
-    public class RegistrationResponse : BaseResponse
+   public  class PromoteUserResponse : BaseResponse
     {
-        public string UserId { get; set; }
     }
 }

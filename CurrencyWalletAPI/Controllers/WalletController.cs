@@ -1,4 +1,5 @@
 ﻿using CurrencyWallet.Application.Features.Wallets.Command.CreateWallet;
+using CurrencyWallet.Application.Features.Wallets.Command.FundWallet;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,9 +16,9 @@ namespace CurrencyWallet.API.Controllers
     {
         private readonly IMediator _mediator;
 
-        public WalletController(IMediator mediator )
+        public WalletController(IMediator mediator)
         {
-            _mediator = mediator; 
+            _mediator = mediator;
         }
         /// <summary>
         /// 
@@ -27,8 +28,22 @@ namespace CurrencyWallet.API.Controllers
         [HttpPost("CreateWallet")]
         public async Task<ActionResult<CreateWalletResponse>> Create([FromBody] CreateWalletCommand createWalletCommand)
         {
-           var dtos = await _mediator.Send(createWalletCommand);
-            return Ok(dtos);
+            var result = await _mediator.Send(createWalletCommand);
+            if (result.Success) return Ok(result);
+            return BadRequest(result);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fundWalletCommand"></param>
+        /// <returns></returns>
+        [HttpPost("FundWallet")]
+        public async Task<ActionResult<FundWalletResponse>> FundWallet([FromBody] FundWalletCommand fundWalletCommand)
+        {
+            var result = await _mediator.Send(fundWalletCommand);
+            if (result.Success) return Ok(result);       
+            return BadRequest(result);
         }
     }
 }

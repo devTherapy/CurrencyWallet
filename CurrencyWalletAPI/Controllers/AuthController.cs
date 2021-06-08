@@ -36,7 +36,8 @@ namespace CurrencyWallet.API.Controllers
         public async Task<ActionResult<RegistrationResponse>> RegisterAsync([FromBody] RegistrationRequest registrationRequest)
         {
          var response =  await _authService.RegisterAsync(registrationRequest);
-         return Ok(response);
+            if (!response.Success) return BadRequest(response);
+            return Ok(response);
         }
        
         /// <summary>
@@ -51,8 +52,34 @@ namespace CurrencyWallet.API.Controllers
         )
         {
             var response = await _authService.AuthenticateAsync(authenticationRequest);
+            if (!response.Success) return BadRequest(response);
             return Ok(response);
 
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        [HttpPatch("Promote-User")]
+        public async Task<ActionResult<PromoteUserResponse>> PromoteUser(string userId)
+        {
+            var response = await _authService.PromoteUser(userId);
+            if (!response.Success) return BadRequest(response);
+            return Ok(response);
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        [HttpPatch("Demote-User")]
+        public async Task<ActionResult<PromoteUserResponse>> DemoteUser(string userId)
+        {
+            var response = await _authService.PromoteUser(userId);
+            if (!response.Success) return BadRequest(response);
+            return Ok(response);
         }
     }
 }

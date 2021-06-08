@@ -10,6 +10,7 @@ namespace CurrencyWallet.Application.Contract.Identity
     {
         Task<AuthenticationResponse> AuthenticateAsync(AuthenticationRequest request);
         Task<RegistrationResponse> RegisterAsync(RegistrationRequest request);
-
+        Task<PromoteUserResponse> DemoteUser(string userId);
+        Task<PromoteUserResponse> PromoteUser(string userId);
     }
 }

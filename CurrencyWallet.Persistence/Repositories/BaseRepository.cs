@@ -10,7 +10,7 @@ namespace CurrencyWallet.Persistence.Repositories
 {
     public class BaseRepository<T> : IAsyncRepository<T> where T : class
     {
-        private readonly CurrencyWalletDbContext _dbContext;
+        protected readonly CurrencyWalletDbContext _dbContext;
 
         public BaseRepository(CurrencyWalletDbContext dbContext)
         {

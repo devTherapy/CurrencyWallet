@@ -18,16 +18,19 @@
             "Currency": "AED",
             "Amount": "5000.00",
             "WalletId": "31bb0800-b057-4497-a7a9-5fe3eb257145",
-            "TransactionTypeId": "08c07c7a-2ab6-40e1-a9e4-ec2d853a3a64", //credit
-            "TransactionStatusId": "a41862f7-10ad-4a71-9e5d-aaf8127e12e7" //approved
-
+            "TransactionType": "credit", //credit
+            "TransactionStatus": "approved", //approved
+            "BalanceBeforeTransaction": "0.00",
+            "BalanceAfterTransaction": "5000.00"
           },
           {
             "Currency": "AED",
             "Amount": "5000.00",
             "WalletId": "31bb0800-b057-4497-a7a9-5fe3eb257145",
-            "TransactionTypeId": "08c07c7a-2ab6-40e1-a9e4-ec2d853a3a64", //credit
-            "TransactionStatusId": "a41862f7-10ad-4a71-9e5d-aaf8127e12e7" //approved
+            "TransactionType": "credit", //credit
+            "TransactionStatus": "approved", //approved
+            "BalanceBeforeTransaction": "5000.00",
+            "BalanceAfterTransaction": "10000.00"
           }
         ]
       },
@@ -51,39 +54,46 @@
             "Currency": "AED",
             "Amount": "5000.00",
             "WalletId": "ab90ef3d-364b-4889-800a-8b8f768d6e96",
-            "TransactionTypeId": "08c07c7a-2ab6-40e1-a9e4-ec2d853a3a64", //credit
-            "TransactionStatusId": "a41862f7-10ad-4a71-9e5d-aaf8127e12e7" //approved
-
+            "TransactionType": "credit", //credit
+            "TransactionStatus": "approved", //approved
+            "BalanceBeforeTransaction": "0.00",
+            "BalanceAfterTransaction": "5000.00"
           },
           {
             "Currency": "AED",
             "Amount": "5000.00",
             "WalletId": "ab90ef3d-364b-4889-800a-8b8f768d6e96",
-            "TransactionTypeId": "08c07c7a-2ab6-40e1-a9e4-ec2d853a3a64", //credit
-            "TransactionStatusId": "a41862f7-10ad-4a71-9e5d-aaf8127e12e7" //approved
+            "TransactionType": "credit", //credit
+            "TransactionStatus": "approved", //approved
+            "BalanceBeforeTransaction": "5000.00",
+            "BalanceAfterTransaction": "10000.00"
           }
         ]
       },
       {
         "Id": "a0d74a03-c53c-405b-b97c-948e13985117",
         "Currency": "ALL",
-        "Balance": "20000.00",
+        "Balance": "40000.00",
         "Main": "false",
         "Transactions": [
           {
             "Currency": "ALL",
             "Amount": "20000.00",
             "WalletId": "a0d74a03-c53c-405b-b97c-948e13985117",
-            "TransactionTypeId": "08c07c7a-2ab6-40e1-a9e4-ec2d853a3a64", //credit
-            "TransactionStatusId": "a41862f7-10ad-4a71-9e5d-aaf8127e12e7" //approved
+            "TransactionType": "credit", //credit
+            "TransactionStatus": "approved", //approved
+            "BalanceBeforeTransaction": "0.00",
+            "BalanceAfterTransaction": "20000.00"
 
           },
           {
             "Currency": "ALL",
             "Amount": "20000.00",
             "WalletId": "a0d74a03-c53c-405b-b97c-948e13985117",
-            "TransactionTypeId": "08c07c7a-2ab6-40e1-a9e4-ec2d853a3a64", //credit
-            "TransactionStatusId": "a41862f7-10ad-4a71-9e5d-aaf8127e12e7" //approved
+            "TransactionType": "credit", //credit
+            "TransactionStatus": "approved", //approved
+            "BalanceBeforeTransaction": "20000.00",
+            "BalanceAfterTransaction": "40000.00"
           }
         ]
       }

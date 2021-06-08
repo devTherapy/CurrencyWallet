@@ -10,12 +10,11 @@ namespace CurrencyWallet.Domain.Entities
         public string Currency { get; set; }
         public decimal Amount { get; set; }
         public string WalletId { get; set; }
-        public string TransactionTypeId { get; set; }
-        public string TransactionStatusId { get; set; }
-
+        public string TransactionType { get; set; }
+        public string TransactionStatus { get; set; }
+        public decimal BalanceBeforeTransaction { get; set; }
+        public decimal BalanceAfterTransaction { get; set; }
         //navigational property
         public Wallet Wallet { get; set; }
-        public TransactionStatus  TransactionStatus { get; set; }
-        public TransactionCategory TransactionType { get; set; }
     }
 }

@@ -27,27 +27,9 @@ namespace CurrencyWallet.Persistence.Seeder
                 }
 
             }
-            var TransactionTypes = TransformJSONtoPOCO<TransactionCategory>("TransactionType.json");
-            if (!ctx.TransactionTypes.Any())
-            {
-                foreach (var type in TransactionTypes)
-                {
-                    await ctx.TransactionTypes.AddAsync(type);
-                    await ctx.SaveChangesAsync();
-                }
 
-            }
             //seed merchants
-            var TransactionStatus = TransformJSONtoPOCO<TransactionStatus>("TransactionStatus.json");
-            //seed the wallet and card transaction categories
-            if (!ctx.TransactionStatuses.Any())
-            {
-                foreach (var item in TransactionStatus)
-                {
-                    await ctx.TransactionStatuses.AddAsync(item);
-                    await ctx.SaveChangesAsync();
-                }
-            }
+
             //seed users
             var Users = TransformJSONtoPOCO<ApplicationUser>("Users.json");
             if (!ctx.Users.Any())

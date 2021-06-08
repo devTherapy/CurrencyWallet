@@ -4,14 +4,16 @@ using CurrencyWallet.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CurrencyWallet.Persistence.Migrations
 {
     [DbContext(typeof(CurrencyWalletDbContext))]
-    partial class CurrencyWalletDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210608124046_updated-transaction-model")]
+    partial class updatedtransactionmodel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

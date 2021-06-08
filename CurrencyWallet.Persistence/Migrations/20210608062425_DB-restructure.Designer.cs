@@ -4,14 +4,16 @@ using CurrencyWallet.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CurrencyWallet.Persistence.Migrations
 {
     [DbContext(typeof(CurrencyWalletDbContext))]
-    partial class CurrencyWalletDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210608062425_DB-restructure")]
+    partial class DBrestructure
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,12 +28,6 @@ namespace CurrencyWallet.Persistence.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<decimal>("Amount")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("BalanceAfterTransaction")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("BalanceBeforeTransaction")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime>("CreatedDate")
